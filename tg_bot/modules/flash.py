@@ -4,6 +4,8 @@ from telegram.ext import run_async
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot import dispatcher
 
+import random
+
 @run_async
 def flash(bot: Bot, update: Update):
     message = update.effective_message
