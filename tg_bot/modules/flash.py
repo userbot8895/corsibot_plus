@@ -5,6 +5,7 @@ from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot import dispatcher
 
 import random
+import time
 
 @run_async
 def flash(bot: Bot, update: Update):
