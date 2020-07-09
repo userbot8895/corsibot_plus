@@ -18,9 +18,9 @@ def flash(bot: Bot, update: Update):
         return message.reply_text("`Cannot flash file!`")
     time.sleep(4)
     if r % 2 == 1:
-        return message.reply_text(f"`Successfully flashed` {text}.zip`!`", telegram.ParseMode.MARKDOWN)
+        return message.reply_text(f"Successfully flashed {text}.zip!", telegram.ParseMode.MARKDOWN)
     elif r % 2 == 0:
-        return message.reply_text(f"`Flashing` {text}.zip `failed successfully!`", telegram.ParseMode.MARKDOWN)
+        return message.reply_text(f"Flashing {text}.zip failed successfully!", telegram.ParseMode.MARKDOWN)
 
 __help__ = """
 Flash a file. Originally from NunoBot++.
