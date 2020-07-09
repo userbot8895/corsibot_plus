@@ -25,6 +25,6 @@ Usage: /flash <file>
 
 __mod_name__ = "Flasher"
 
-ud_handle = DisableAbleCommandHandler("flash", ud)
+ud_handle = DisableAbleCommandHandler("flash", flash)
 
 dispatcher.add_handler(ud_handle)
