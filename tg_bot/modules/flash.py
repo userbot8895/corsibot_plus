@@ -12,16 +12,15 @@ import time
 def flash(bot: Bot, update: Update):
     message = update.effective_message
     text = message.text[len('/flash '):]
-    msg = message.reply_text(f"`Flashing` {text}.zip`...` ", telegram.ParseMode.MARKDOWN)
     bot.sendChatAction(update.effective_chat.id, 'TYPING')
     r = random.randint(1, 10000)
     if len(text.split(" ")) > 1:
-        return bot.edit_message_text(update.message.chat_id, msg.message_id, "`Cannot flash file!`", telegram.ParseMode.MARKDOWN)
+        return message.reply_text("`Cannot flash file!`")
     time.sleep(4)
     if r % 2 == 1:
-        return bot.edit_message_text(update.message.chat_id, msg.message_id, f"`Successfully flashed` {text}.zip`!`", telegram.ParseMode.MARKDOWN)
+        return message.reply_text(f"`Successfully flashed` {text}.zip`!`", telegram.ParseMode.MARKDOWN)
     elif r % 2 == 0:
-        return bot.edit_message_text(update.message.chat_id, msg.message_id, f"`Flashing` {text}.zip `failed successfully!`", telegram.ParseMode.MARKDOWN)
+        return message.reply_text(f"`Flashing` {text}.zip `failed successfully!`", telegram.ParseMode.MARKDOWN)
 
 __help__ = """
 Flash a file. Originally from NunoBot++.
