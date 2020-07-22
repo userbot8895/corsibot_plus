@@ -1,0 +1,7 @@
+{
+  "name": "CorsiBot++",
+  "description": "A modular telegram Python bot running on python3 with an sqlalchemy database.",
+  "repository": "https://github.com/githubcatw/corsibot_plus",
+  "logo": "https://avatars1.githubusercontent.com/u/17374742?s=460&u=dc9c0d559af6824055ed21fe3efce0482436a203&v=4",
+  "keywords": ["python","telegram","bot","corsibot"]
+}
