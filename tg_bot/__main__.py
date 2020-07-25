@@ -51,8 +51,7 @@ the things I can help you with.
 Other available commands:
 """.format("" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """
-You can send a donation to my current maintainers, @corsicanu and @nunopenim, via PayPal at paypal.me/corsicanu and/or paypal.me/nunopenim."""
+DONATE_STRING = f"You can send a donation to my current maintainer by visiting {DONATION_LINK if DONATION_LINK != None else 'paypal.me/nunopenim or paypal.me/corsicanu'}."
 
 IMPORTED = {}
 MIGRATEABLE = []
