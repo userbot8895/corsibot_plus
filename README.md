@@ -1,4 +1,5 @@
-# Pawnee Bot has been discontinued, see [this](https://t.me/pawneeupdates/127)
+# Pawnee Bot has been discontinued, see [this](https://t.me/pawneeupdates/127).
+But, I'm releasing a partially developed port of disease as a last thank you to those who used Pawnee Bot. I'm unsure if this works well, which is why I'm releasing this to a separate branch.
 
 # Pawnee Bot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
